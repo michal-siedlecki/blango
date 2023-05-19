@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "../base.html" %}
 {% load blog_extras %}
 {% block content %}
 <h2>{{ post.title }}</h2>
@@ -9,7 +9,7 @@
 </div>
 <div class="row">
     <div class="col">
-        {{ post.content|safe }}
+        {{ post.content }}
     </div>
 </div>
 {% row %}
@@ -17,4 +17,5 @@
         {% recent_posts post %}
     {% endcol %}
 {% endrow %}
+    {% include "blog/post-comments.html" %}
 {% endblock %}
