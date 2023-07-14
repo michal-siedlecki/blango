@@ -37,8 +37,9 @@ wheels/
 # pyenv
 .python-version
 
-
 # Environments
 venv/
 
-
+#IDE and local
+.idea/
+.DS_Store
