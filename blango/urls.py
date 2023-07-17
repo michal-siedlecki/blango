@@ -36,6 +36,7 @@ urlpatterns = [
         name='django_registration_register',
     ),
     path('accounts/', include('django_registration.backends.activation.urls')),
+    path('accounts/', include('allauth.urls')),
     path('accounts/profile/', blango_auth.views.profile, name='profile'),
 
 ]

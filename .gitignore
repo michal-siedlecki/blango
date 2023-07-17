@@ -43,3 +43,6 @@ venv/
 #IDE and local
 .idea/
 .DS_Store
+
+#Database
+db.sqlite3
